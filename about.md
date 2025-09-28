@@ -52,3 +52,69 @@ A simple **Currency Converter** application built using **Python Tkinter**. This
     "IDR": 14250.0,
     "BDT": 109.5
 }
+
+
+User enters the amount, selects From Currency and To Currency from dropdown menus.
+
+Pressing the Convert button calls a function that calculates the converted amount:
+
+base_amount = amount / rates[from_currency]
+converted_amount = base_amount * rates[to_currency]
+
+
+The result is displayed dynamically in the application window.
+
+Handles errors such as invalid amounts or unsupported currencies.
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/yourusername/currency-converter.git
+cd currency-converter
+
+
+Install dependencies (Tkinter comes pre-installed with Python, no additional packages are required).
+
+Ensure that exchange_rates.json is in the same directory as the Python script.
+
+Usage
+
+Run the Python script:
+
+python currency_converter.py
+
+
+Enter the amount to convert.
+
+Select From Currency and To Currency from the dropdown menus.
+
+Click Convert.
+
+View the conversion result below the button.
+
+Error Handling
+
+If the JSON file is missing, the program prints:
+
+Exchange rate file not found!
+
+
+If the user enters an invalid amount (like letters), the program displays:
+
+Invalid Amount!
+
+
+If an unsupported currency is selected, the program displays:
+
+Conversion Error!
+
+Contributing
+
+Feel free to contribute by:
+
+Adding more currencies.
+
+Fetching live exchange rates via APIs.
+
+Improving GUI layout and design.
